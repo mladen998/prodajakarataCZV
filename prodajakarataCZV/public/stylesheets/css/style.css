@@ -1,0 +1,495 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    background-color: #F6F7FA!important;
+    font-size:12px;
+overflow-x: hidden;
+
+
+}
+
+body{
+   
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300!important;
+}
+
+h5
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.text
+{
+
+    color:#606060;  
+    font-family: 'Open Sans',sans-serif;
+}
+
+a {
+    text-decoration: none!important;
+   
+}
+/* pocinje vertikalni navbar */
+.menu {
+    width: 15rem;
+    height: 100%;
+    background-color: white;
+    float: left;
+   
+}
+
+.aktivan {
+    padding-left: 0.8rem;
+   margin-left:2.2rem;
+    background-color: rgba(97, 50, 168, 0.05);
+    border-radius: 30px;
+    width: 8rem;
+    height: 2.5rem;
+    color: #990000!important;
+   
+   
+   
+}
+
+.aktivan-dash {
+    padding-left: 0.8rem;
+   margin-left:2.2rem;
+    background-color: rgba(97, 50, 168, 0.05);
+    border-radius: 30px;
+    width: 9rem;
+    height: 2.5rem;
+    color: #990000!important;
+   
+   
+   
+}
+
+.sidebar-hover {
+    padding-left: 0.8rem;
+    margin-left: 2.2rem;
+    
+    border-radius: 30px;
+    width: 8rem;
+    height: 2.5rem;
+   
+}
+
+
+.sidebar-hover-dash {
+    padding-left: 0.8rem;
+    margin-left: 2.2rem;
+    
+    border-radius: 30px;
+    width: 9rem;
+    height: 2.5rem;
+   
+}
+.sidebar-hover:hover, .sidebar-hover-dash:hover
+{
+    background-color: rgba(97, 50, 168, 0.05);
+}
+.aktivan a:hover {
+    background-color: rgba(97, 50, 168, 0)!important;
+    color:  #990000!important;
+}
+
+
+
+
+.nav-button {
+    padding-top: 0px!important;
+    background-color:  #990000;
+    border-radius: 30px;
+    width: 7rem;
+    height: 2rem;
+  
+    position: absolute;
+    bottom: 4rem;
+}
+
+.nav-text {
+    color: #828284!important;
+    width: 7rem;
+}
+
+.nav-text:hover {
+    color:  #990000;
+    font-weight: bold!important;
+    
+}
+
+.nav-button:hover {
+    background-color:  #990000;
+}
+
+.menu h4 {
+    color:  #990000;
+}
+
+.disabled:hover
+{
+    color:#828284!important;
+}
+/* zavrsava se vertikalni navbar */
+
+/* pocinje horizontalni navbar */
+
+  button
+  {
+      border:none;
+      outline: none!important;
+      background-color:  #F6F7FA;
+     
+  }
+
+
+/* zavrsava se horizontalni navbar */
+
+/* pocinje tabela */
+.table-div
+{
+    background-color: white;
+    border-radius: 1.1rem;
+    height: 100vh;
+   
+   
+}
+
+.table-div-small
+{
+    background-color: white;
+    border-radius: 1.1rem;
+    
+   
+   
+}
+
+.table-div-login
+{
+    background-color: white;
+    border-radius: 1.1rem;
+    
+   
+   
+}
+.container
+{
+    overflow: hidden;
+    
+}
+
+table
+{
+    border-radius: 1.1rem
+    
+}
+
+tr:hover
+{
+    background-color: #F6F7FA;
+
+}
+
+.tbl-width
+{
+    padding-right: 6rem!important;
+    
+}
+
+.tabs{
+    padding-bottom: 5px;
+    color:#828284;
+}
+.tabs:hover
+{
+    color: #990000;
+    border-bottom:2px solid  #990000;;
+    
+}
+.tabshr
+{
+    width: 100%;
+    
+    margin:5px;
+}
+
+.active
+{
+    color: #990000;
+    border-bottom:2px solid  #990000;
+
+}
+
+
+  
+.kol1
+{
+    background-color: #F6F7FA;
+    border-radius: 0.5rem;
+}
+
+.preuzmi
+{
+    width:5rem!important;
+    font-size: 9px;
+   height: 1.8rem!important;
+}
+
+.kol-head
+{
+    font-size: 14px;
+}
+
+.test
+{
+    width: 100%;
+    background-color:#F6F7FA;
+}
+
+
+.aktivan-sm
+{
+    padding-left: 1rem;
+     background-color: rgba(97, 50, 168, 0.1);
+     border-radius: 30px;
+     width: 5rem;
+     height: 1.75rem;
+     color: #990000;
+     font-size: smaller;
+}
+
+h1,h2,h4,h5,h6
+{
+   color: #0F0F0F!important;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 600!important;   
+}
+
+.purple
+{
+    color: #990000!important;
+}
+
+select{
+    width: 10rem!important;
+}
+
+.circle2
+{
+    border-radius: 50%;
+    width: 2.1rem;
+    height: 2.1rem;
+    background-color:  rgba(77, 0, 128, 0.541)!important;
+}
+
+.circle
+{
+    border-radius: 50%;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color:  rgba(224, 222, 222, 0.568);
+}
+
+.predmet-ime
+{
+    font-size: medium;
+    font-weight: 500;
+    
+}
+
+.medjuheader
+{
+    font-size:larger;
+    font-weight: 500;
+    
+}
+
+
+.select-section
+{
+    width:max-content!important;
+}
+
+textarea
+{
+    width: 100%!important;
+}
+.naslov
+{
+    width: 265px!important;
+}
+progress
+{
+    height: 7px;
+    width: 250px;
+   
+}
+.small
+{
+    font-size: x-small;
+    
+}
+.search
+{
+    width: 150px!important;
+}
+
+/* login */
+
+.login
+{
+    margin-top:15%;
+}
+
+.login-small
+{
+    font-size: xx-small;
+}
+
+.btn-prikazi
+{
+    color: #990000!important;
+    background-color: #fff!important;
+    border: 1px solid  #990000!important;
+	width:110px!important;
+    border-radius:30px!important;
+    height: 30px;
+    padding-left: 25px!important;
+}
+
+
+
+.btn-prikazi:hover{
+	background-color: #990000!important;
+	color:#fff!important;
+}
+
+
+.plus
+{
+    color: #990000!important;
+    background-color: #fff!important;
+    border: 1px solid  #990000!important;
+	width:110px!important;
+    border-radius:30px!important;
+    height: 30px;
+   
+}
+
+
+
+.plus:hover{
+	background-color: #990000!important;
+	color:#fff!important;
+}
+
+
+.btn-prijavise
+{
+    background: #990000!important;
+    color: #fff!important;
+	width:110px!important;
+	border-radius:30px!important;
+}
+
+
+
+.btn-prijavise:hover{
+	background-color:#7546d3!important;
+	color:#fff!important;
+}
+
+
+.header
+{
+    font-size: x-large;
+}
+/* login */
+
+
+/* dashboard */
+
+.purple-dashboard
+{
+    background-color:  #990000;
+    border-radius: 15px;
+    filter:blur(30);
+    height: 250px;
+    color: #fff;
+}
+
+.beleske-text
+{
+    background-color: #F6F7FA!important;
+}
+
+
+.live
+{
+    font-size: 14px!important;
+    font-weight: 300;
+   
+}
+.gray
+{
+    color:gray;
+}
+/* dashboard */
+
+
+/* zavrsava se tabela */
+
+
+/* media queris */
+
+@media only screen and (max-width: 600px) {
+    .horiz
+    {
+        margin-right:1.5rem!important;
+    }
+
+     li
+    {
+       margin-right:3rem!important;
+    }
+    textarea
+    {
+        width: 100%!important;
+    }
+
+    input{
+        margin-top:15px!important;
+    }
+
+  }
+
+  @media only screen and (min-width: 800px) 
+  {
+    textarea
+    {
+        width: 150%!important;
+    }
+
+  }
+
+  @media only screen and (min-width: 1000px) 
+  {
+    textarea
+    {
+        width: 250%!important;
+    }
+
+  }
+  @media only screen and (min-width: 1400px) 
+  {
+    textarea
+    {
+        width: 380%!important;
+    }
+
+  }
+
+
+/* media queris */

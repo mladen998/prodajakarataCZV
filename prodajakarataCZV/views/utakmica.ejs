@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel='stylesheet' href='bootstrap/dist/css/bootstrap.min.css'/>
+
+    <link rel="stylesheet" href="/css/predmeti.css">
+    <!-- css za ikonice -->
+    <link rel="stylesheet" href="/css/ikonice.css">
+
+    <title>Narucivanje</title>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <!-- Pocinje Vertikalni NavBar -->
+
+    <nav id="sidebar">
+        <div class="sidebar-header ml-5 pl-5">
+            <div class="ml-4">
+                <img src="/images/logo.png" alt="">
+            </div>
+        </div>
+
+        <ul class="list-unstyled components ml-5 ">
+
+            <li class="mb-3 pt-1 sidebar-hover-dash">
+                <a href="/">
+                    <span class="icon-dashbempty"></span>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="mb-3 pt-1 sidebar-hover">
+                <a href="/kupci">
+                    <span class="icon-user"></span>
+                    Svi Kupci
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <div class="mr-2">
+        <button type="button" id="sidebarCollapse" class="navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+    </div>
+
+    <!-- Zavrsava se Vertikalni NavBar -->
+    <div id="content">
+
+
+
+
+        <!-- Pocinje Tabela -->
+        <div class="container">
+            <div class="row">
+                <div class=" table-responsive table-div-small col-10  m-5 p-5">
+                    <h5><%= odgovor[0].tim1 %> - <%= odgovor[0].tim2 %></h5><br>
+
+                    <div class="row">
+                        Vreme: <%= " "+odgovor[0].vreme %> </br></br>
+                        Datum: <%= " "+odgovor[0].datum.getDay()+"/"+odgovor[0].datum.getMonth()+"/"+odgovor[0].datum.getFullYear() %>
+                        </br></br>Mesto: <%= " "+odgovor[0].mesto %>
+                    </div>
+                    <div class="row my-2">
+                        </br></br> Dostupne karte: <%= " "+odgovor[0].brojdostupnihkarata %>
+                    </div>
+
+                    <div class="row">
+                        <a href="/forma?id=<%=odgovor[0].id%>&tim=<%=odgovor[0].tim1+"-"+odgovor[0].tim2%>&datum=<%= " "+odgovor[0].datum.getDay()+"/"+odgovor[0].datum.getMonth()+"/"+odgovor[0].datum.getFullYear() %>&vreme=<%= " "+odgovor[0].vreme %>&karte=<%=odgovor[0].brojdostupnihkarata %> "  class="btn btn-danger ">
+                            Naručivanje</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Zavrsava se tabela -->
+<script src="/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/javascripts/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+
+</body>
+
+</html>
